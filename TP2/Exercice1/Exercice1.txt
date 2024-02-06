@@ -1,0 +1,19 @@
+    - Rechercher la documentation de la fonction strcmp et expliquer, en trois lignes maximum, ce qu’elle fait.
+
+En regardant la documentation de strcmp en entrant la commande suivante dans l'invité de commande: man 3 strcmp,
+nous obtenons la documentation de ce dernier. 
+La fonction strcmp permet de comparer deux chaines de caracteres s1 et s2, et renvoie 0 si les deux sont égaux, 
+une valeure négative si la première chaine de caracteres est inferieur à la deuxieme et enfin une valeure positive
+pour la situation inverse.
+
+
+    - Rechercher la documentation des fonctions strchr et strrchr et expliquer, en trois lignes maximum, ce qu’elles font.
+
+La fonction strchr prend en parametre une chaine de caracteres et un entier (qui sera utilisé en caractere unique) et retourne
+un pointeur vers la première occurence du caractere dans la chaine de caractere.
+strrchr fait de même, mais retourne la dernière occurence. 
+
+    - Rechercher la documentation de la fonction atoi et expliquer, en deux lignes maximum, ce qu’elle fait.
+
+La fonction atoi permet de convertir une chaine de caractere comportant des chiffres en un entier. Si la fonction recoit une lettre, 
+la fonction ne renverra rien.
