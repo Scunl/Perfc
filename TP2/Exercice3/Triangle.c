@@ -4,10 +4,20 @@
 
 int main(int argc, char const *argv[]) {
     if (argc == 3) {
+        int n = atoi(argv[1]);
+
+        int max = n * (2 * n + 1);
         int temp = 0;
-        for (int i = atoi(argv[1]); i >= 0; i--) {
+        int i, j;
+        for (i = n; i >= 0; i--) {
             temp += 2 * i + 1;
-            for (int j = 0; j < temp; j++) {
+            int espaces =
+                (max - temp) / 2; // Espaces avant la ligne
+            for (j = 0; j < espaces; j++) {
+                printf(" ");
+            }
+            for (j = 0; j < temp; j++) {
+
                 printf("%c", argv[2][0]);
             }
             temp = 0;
